@@ -30,7 +30,7 @@ with st.container():
         import datetime
         df.time_created = df.time_created.apply(lambda x: datetime.datetime.fromtimestamp(x).hour)
         #df['image'] = df['index'].apply(lambda x: 'http://localhost:8888/files/Desktop/MDS/SI%20649/Group%20Project/Notebooks/images/'+str(x+2)+'.png?_xsrf=2%7Cc9d848e0%7Cdbff42938cb51350c2ae90bc3422db02%7C1646800167')
-        df['image'] = df['index'].apply(lambda x:'hhttps://github.com/HareeshwarKarthikeyan/Analysis-of-Popularity-of-Visualizations-in-r-dataisbeautiful/blob/main/images/'+str(x+2)+'.png')
+        df['image'] = df['index'].apply(lambda x:'https://raw.githubusercontent.com/HareeshwarKarthikeyan/Analysis-of-Popularity-of-Visualizations-in-r-dataisbeautiful/main/images/'+str(x+2)+'.png')
 
 
 
@@ -254,7 +254,7 @@ with st.container():
         df['colors'] = img_df['number_of_colors']
         df2 = df.copy()
         #df2['image'] = df2['index'].apply(lambda x: 'http://localhost:8888/files/Desktop/MDS/SI%20649/Group%20Project/Notebooks/piecharts/'+str(x+2)+'.png?_xsrf=2%7Cc9d848e0%7Cdbff42938cb51350c2ae90bc3422db02%7C1646800167')
-        df2['image'] = df2['index'].apply(lambda x:'https://github.com/HareeshwarKarthikeyan/Analysis-of-Popularity-of-Visualizations-in-r-dataisbeautiful/blob/main/piecharts/'+str(x+2)+'.png')
+        df2['image'] = df2['index'].apply(lambda x:'https://raw.githubusercontent.com/HareeshwarKarthikeyan/Analysis-of-Popularity-of-Visualizations-in-r-dataisbeautiful/main/piecharts/'+str(x+2)+'.png')
         # Scatterplot2 - For number of colors
         scatterplot2 = alt.Chart(df2).mark_circle().\
         encode(
