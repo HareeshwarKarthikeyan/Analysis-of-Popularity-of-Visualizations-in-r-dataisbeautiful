@@ -353,7 +353,6 @@ with st.container():
     col_spacer1,col1,col2, spacer2 = st.columns((.1, 7,3, .1))
     with col1:
         st.markdown("###### Thanks for reading this article :)")
-        st.markdown("###### Written by Hareeshwar Karthikeyan and Shivani Baskar")
-        st.markdown("###### Github repository containing data and analysis [here](https://www.reddit.com/r/dataisbeautiful/)")
-
+        st.markdown("###### Written by [Hareeshwar Karthikeyan](https://www.linkedin.com/in/hareeshwar-karthikeyan/) and [Shivani Baskar](https://www.linkedin.com/in/shivanibaskar/)")
+        st.markdown("###### Github repository containing data and analysis [here](https://github.com/HareeshwarKarthikeyan/Analysis-of-Popularity-of-Visualizations-in-r-dataisbeautiful)")
 
